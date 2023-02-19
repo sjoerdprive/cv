@@ -5,6 +5,7 @@ import {
   faMobile,
   faAt,
   faUniversalAccess,
+  faGraduationCap,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -41,11 +42,20 @@ export default function Home() {
               </li>
               <li>
                 <IconText start={<FontAwesomeIcon icon={faGithub} />}>
-                  GitHub :
+                  GitHub:
                 </IconText>{' '}
                 <a className="white" href="https://github.com/sjoerdprive">
                   github.com/sjoerdprive
                 </a>
+              </li>
+              <li>
+                <IconText
+                  hideLabel
+                  start={<FontAwesomeIcon icon={faGraduationCap} />}
+                >
+                  Afgestudeerd
+                </IconText>
+                <span>HBO Creative Media & Game Design, Saxion Enschede</span>
               </li>
             </ul>
           </div>
@@ -53,12 +63,41 @@ export default function Home() {
       </section>
       <section className="section">
         <div className="container">
+          <h2>Over mij</h2>
+          <p>
+            Het leven bestaat uit meer dan alleen werk. Naast wat ik voor geld
+            doe, speel ik gitaar in een band en hou ik van goed eten, koken, en
+            interesseer ik me elke maand in iets anders.
+          </p>
+          <p>
+            Na de middelbare school dacht ik dat ik van scheikunde mijn beroep
+            opleiding ging maken. Na een een paar maanden Chemie te hebben
+            gestudeerd ben toch een andere richting in geslagen met de brede
+            Kunst en Technologie opleiding. Deze is richting het eind van mijn
+            opleiding veranderd naar Creative Media &amp; Game Technology.
+          </p>
+          <p>
+            Gedurende deze opleiding ben ik in contact gekomen met web
+            development. Bij mijn stage bij Code.Rehab heb ik kennis gemaakt met
+            het fijne van WordPress en React. Later ben ik voor het afronden van
+            mijn opleiding nog een half jaar werkzaam geweest bij Code.Rehab als
+            full stack developer, waarna ik mijn opleiding heb afgemaakt.
+          </p>
+          <p>
+            Via een bekende heb ik kennis gemaakt met digitale toegankelijkheid.
+            Zij bood mij bij haar bedrijf Firm Ground een baan aan als adviseur,
+            waar ik na mijn opleiding direct begonnen ben.
+          </p>
+        </div>
+      </section>
+      <section className="section bg-light">
+        <div className="container">
           <h2>Werkervaring</h2>
           <div className="columns">
             <div>
               <div className="mb-2">
                 <h3 className="mb-0 fixed">
-                  <span className="primary">Full stack developer </span>
+                  <span className="primary">Full stack developer</span>
                   bij Code.Rehab, Enschede
                 </h3>
                 <small>Sept. 2020 - Sept. 2021</small>
@@ -119,7 +158,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section bg-light">
+      <section className="section">
         <div className="container">
           <h2>Vaardigheden</h2>
           <div className="columns">
@@ -148,6 +187,8 @@ export default function Home() {
                 'CSS Layers',
                 'Bootstrap',
                 'Fluid responsiveness',
+                'Grid',
+                'Flexbox',
               ]}
             />
             <SkillMeter
@@ -161,6 +202,7 @@ export default function Home() {
               label={<h3 className="mb-1 fixed">A11y</h3>}
               score={70}
               icon={<FontAwesomeIcon icon={faUniversalAccess} />}
+              tags={['WCAG 2.1 AA']}
             />
           </div>
         </div>
