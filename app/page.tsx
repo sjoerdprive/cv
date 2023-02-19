@@ -65,12 +65,14 @@ export default function Home() {
         <div className="container">
           <h2>Over mij</h2>
           <p>
-            Het leven bestaat uit meer dan alleen werk. Naast wat ik voor geld
-            doe, speel ik gitaar in een band en hou ik van goed eten, koken, en
-            interesseer ik me elke maand in iets anders.
+            Ik ben graag bezig met de ontwikkelingen in de front-end wereld.
+            Nieuwe technologieën die uitkomen bekijk en probeer ik graag. Naast
+            mijn interesse in de technische hoek speel ik met veel plezier
+            gitaar in een band. Ik hou van goed eten, koken, en ik interesseer
+            me elke maand in iets anders.
           </p>
           <p>
-            Na de middelbare school dacht ik dat ik van scheikunde mijn beroep
+            Na de middelbare school dacht ik dat ik van scheikunde mijn
             opleiding ging maken. Na een een paar maanden Chemie te hebben
             gestudeerd ben toch een andere richting in geslagen met de brede
             Kunst en Technologie opleiding. Deze is richting het eind van mijn
