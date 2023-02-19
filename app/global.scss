@@ -1,0 +1,44 @@
+@import 'variables';
+@import '../styles/modu-basestyles/index.scss';
+
+.profile-pic {
+  @include cut-corners(40px);
+}
+
+.skill-meter {
+  display: flex;
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+
+    padding: 0.25rem;
+
+    margin-right: 1rem;
+
+    color: white;
+
+    background-color: $primary;
+    border-radius: 100%;
+  }
+
+  .body {
+    width: 100%;
+  }
+
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+
+    @extend .p-2;
+    @extend .gap-1;
+
+    .tag {
+      background-color: white;
+
+      @extend .p-1;
+    }
+  }
+}
