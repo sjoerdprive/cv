@@ -96,9 +96,7 @@ export default function Home() {
       </section>
       <section className="section bg-light">
         <div className="container">
-          <div className="mb-3">
-            <h2 className="m-0">Projecten</h2>
-          </div>
+          <h2>Projecten (een selectie)</h2>
           <div className="columns">
             <div>
               <h3 className="fixed">Expo (plugin)</h3>
