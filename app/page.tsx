@@ -83,9 +83,11 @@ export default function Home() {
           <p>
             Gedurende deze opleiding ben ik in contact gekomen met web
             development. Bij mijn stage bij Code.Rehab heb ik kennis gemaakt met
-            het fijne van WordPress en React. Later ben ik voor het afronden van
-            mijn opleiding nog een half jaar werkzaam geweest bij Code.Rehab als
-            full stack developer, waarna ik mijn opleiding heb afgemaakt.
+            het fijne van WordPress en React. Ik ben sindsdien zelf bezig met
+            mijzelf ontwikkelen op het gebied van front-end developent. Later
+            ben ik voor het afronden van mijn opleiding nog een half jaar
+            werkzaam geweest bij Code.Rehab als full stack developer, waarna ik
+            mijn opleiding heb afgemaakt.
           </p>
           <p>
             Via een bekende heb ik kennis gemaakt met digitale toegankelijkheid.
@@ -159,6 +161,8 @@ export default function Home() {
                 Opleveren WordPress websites voor diverse klanten. Voornamelijk
                 commerciële partijen, maar ook gemeente Enschede was bij ons
                 cliënt. Doorontwikkelen React platform voor digitale magazines.
+                Ik ben sindsdien zelf bezig met mijzelf ontwikkelen op het
+                gebied van front-end developent.
               </p>
               <ul className="bullets lead">
                 <li>WordPress</li>
