@@ -1,5 +1,3 @@
-import IconText from './../components/iconText';
-import SkillMeter from '@/components/skillMeter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faMobile,
@@ -14,6 +12,10 @@ import {
   faWordpress,
 } from '@fortawesome/free-brands-svg-icons';
 
+import IconText from '@/components/iconText';
+import SkillMeter from '@/components/skillMeter';
+import Job from '@/components/job';
+
 export default function Home() {
   return (
     <main>
@@ -25,7 +27,7 @@ export default function Home() {
 
             <ul className="mt-auto">
               <li>
-                <IconText start={<FontAwesomeIcon size="1x" icon={faMobile} />}>
+                <IconText start={<FontAwesomeIcon icon={faMobile} />}>
                   Mobiel:{' '}
                 </IconText>{' '}
                 <a className="white" href="tel:+31619561814">
@@ -74,7 +76,7 @@ export default function Home() {
           <p>
             Na de middelbare school dacht ik dat ik van scheikunde mijn
             opleiding ging maken. Na een een paar maanden Chemie te hebben
-            gestudeerd ben toch een andere richting in geslagen met de brede
+            gestudeerd ben ik toch een andere richting in geslagen met de brede
             Kunst en Technologie opleiding. Deze is richting het eind van mijn
             opleiding veranderd naar Creative Media &amp; Game Technology.
           </p>
@@ -96,14 +98,11 @@ export default function Home() {
         <div className="container">
           <h2>Werkervaring</h2>
           <div className="columns">
-            <div>
-              <div className="mb-2">
-                <h3 className="mb-0 fixed">
-                  <span className="primary">Full stack developer</span>
-                  bij Code.Rehab, Enschede
-                </h3>
-                <small>Sept. 2020 - Sept. 2021</small>
-              </div>
+            <Job
+              title="Full stack developer"
+              employer="Code.Rehab, Enschede"
+              period="Sept. 2020 - Sept. 2021"
+            >
               <p className="lead">
                 Gecombineerde werkzaamheden met betrekking tot web development.
                 Opleveren WordPress websites voor diverse klanten. Voornamelijk
@@ -115,17 +114,13 @@ export default function Home() {
                 <li>SCSS</li>
                 <li>React</li>
               </ul>
-            </div>
-            <div>
-              <div className="mb-2">
-                <h3 className="mb-0 fixed">
-                  <span className="primary">
-                    Adviseur digitale toegankelijkheid{' '}
-                  </span>
-                  bij Firm Ground, Dieren
-                </h3>
-                <small>Aug. 2021 - Heden</small>
-              </div>
+            </Job>
+
+            <Job
+              title="Adviseur digitale toegankelijkheid"
+              employer="Firm Ground, Dieren"
+              period="Aug. 2021 - Heden"
+            >
               <p className="lead">
                 Voornamelijk overheid en gemeenten als cliënt. Diverse
                 werkzamheden met betrekking tot digitale toegankelijkheid,
@@ -137,15 +132,13 @@ export default function Home() {
                 <li>Trainingen en workshops</li>
                 <li>Klantcontact</li>
               </ul>
-            </div>
-            <div>
-              <div className="mb-2">
-                <h3 className="mb-0 fixed">
-                  <span className="primary">Eigenaar </span>
-                  bij WebModu, Zutphen
-                </h3>
-                <small>Dec. 2021 - Heden</small>
-              </div>
+            </Job>
+
+            <Job
+              title="Eigenaar"
+              employer="WebModu, Zutphen"
+              period="Dec. 2021 - Heden"
+            >
               <p className="lead">
                 Op ZZP basis maak ik (WordPress) websites en custom Gutenberg
                 oplossingen voor particuliere cliënten.
@@ -156,7 +149,7 @@ export default function Home() {
                 <li>SCSS</li>
                 <li>Gutenberg</li>
               </ul>
-            </div>
+            </Job>
           </div>
         </div>
       </section>
