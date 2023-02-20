@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $breakpoint-md) {
-    .label {
+    .label:not(.sm-label) {
       @include sr-only;
     }
   }

@@ -96,6 +96,59 @@ export default function Home() {
       </section>
       <section className="section bg-light">
         <div className="container">
+          <div className="mb-3">
+            <h2 className="m-0">Projecten</h2>
+          </div>
+          <div className="columns">
+            <div>
+              <h3 className="fixed">Expo (plugin)</h3>
+
+              <p className="lead">
+                Custom Gutenberg block, in opdracht gemaakt. Deze WordPress
+                plugin creëert een nieuwe Custom Post Type en verandert de
+                editor hiervan in een klik-en-sleep expositiebouwer, waar
+                afbeeldingen en tekst geplaatst en versleept kunnen worden op
+                een raster.
+              </p>
+              <IconText smLabel start={<FontAwesomeIcon icon={faGithub} />}>
+                <a href="https://github.com/sjoerdprive/expo-gutenberg-plugin">
+                  https://github.com/sjoerdprive/expo-gutenberg-plugin
+                </a>
+              </IconText>
+            </div>
+            <div>
+              <h3 className="fixed">Expo (CMS)</h3>
+
+              <p className="lead">
+                Lopend project. Eigen CMS voor het maken van portfolio's gericht
+                op fotografie, of andere beeldende werken. Uitgebreidere versie
+                van de Expo Gutenberg plugin. Op basis van NextJS, Prisma ORM,
+                AWS S3, Bootstrap en NextAuth.
+              </p>
+              <IconText smLabel start={<FontAwesomeIcon icon={faGithub} />}>
+                <a href="https://github.com/sjoerdprive/expo">
+                  https://github.com/sjoerdprive/expo
+                </a>
+              </IconText>
+            </div>
+            <div>
+              <h3 className="fixed">Karwijtje</h3>
+
+              <p className="lead">
+                Lopend project. Community-gericht platform voor het uitwisselen
+                van diensten. Op basis van NextJS, Supabase en Bootstrap.
+              </p>
+              <IconText smLabel start={<FontAwesomeIcon icon={faGithub} />}>
+                <a href="https://github.com/sjoerdprive/karwijtje">
+                  https://github.com/sjoerdprive/karwijtje
+                </a>
+              </IconText>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
           <h2>Werkervaring</h2>
           <div className="columns">
             <Job
@@ -153,7 +206,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section bg-light">
         <div className="container">
           <h2>Vaardigheden</h2>
           <div className="columns">
