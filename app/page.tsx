@@ -1,20 +1,20 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faMobile,
-  faAt,
-  faUniversalAccess,
-  faGraduationCap,
-} from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faReact,
   faSass,
   faWordpress,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faAt,
+  faGraduationCap,
+  faMobile,
+  faUniversalAccess,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import IconText from '@/components/iconText';
-import SkillMeter from '@/components/skillMeter';
-import Job from '@/components/job';
+import IconText from "@/components/iconText";
+import Job from "@/components/job";
+import SkillMeter from "@/components/skillMeter";
 
 export default function Home() {
   return (
@@ -28,16 +28,16 @@ export default function Home() {
             <ul className="mt-auto">
               <li>
                 <IconText start={<FontAwesomeIcon icon={faMobile} />}>
-                  Mobiel:{' '}
-                </IconText>{' '}
+                  Mobiel:{" "}
+                </IconText>{" "}
                 <a className="white" href="tel:+31619561814">
                   +31 6 1956 1814
                 </a>
               </li>
               <li>
                 <IconText start={<FontAwesomeIcon icon={faAt} />}>
-                  Email:{' '}
-                </IconText>{' '}
+                  Email:{" "}
+                </IconText>{" "}
                 <a className="white" href="mailto:sjrdwillemsen@gmail.com">
                   sjrdwillemsen@gmail.com
                 </a>
@@ -45,7 +45,7 @@ export default function Home() {
               <li>
                 <IconText start={<FontAwesomeIcon icon={faGithub} />}>
                   GitHub:
-                </IconText>{' '}
+                </IconText>{" "}
                 <a className="white" href="https://github.com/sjoerdprive">
                   github.com/sjoerdprive
                 </a>
@@ -111,36 +111,22 @@ export default function Home() {
                 een raster.
               </p>
               <IconText smLabel start={<FontAwesomeIcon icon={faGithub} />}>
-                <a href="https://github.com/sjoerdprive/expo-gutenberg-plugin">
-                  https://github.com/sjoerdprive/expo-gutenberg-plugin
+                <a href="https://github.com/sjoerdprive/gutenberg-expo-v2">
+                  https://github.com/sjoerdprive/gutenberg-expo-v2
                 </a>
               </IconText>
             </div>
             <div>
-              <h3 className="fixed">Expo (CMS)</h3>
+              <h3 className="fixed">Exposure (CMS)</h3>
 
               <p className="lead">
-                Lopend project. Eigen CMS voor het maken van portfolio's gericht
-                op fotografie, of andere beeldende werken. Uitgebreidere versie
-                van de Expo Gutenberg plugin. Op basis van NextJS, Prisma ORM,
-                AWS S3, Bootstrap en NextAuth.
+                Lopend project. Eigen CMS voor het maken van portfolio&apos;s
+                gericht op fotografie, of andere beeldende werken. Uitgebreidere
+                versie van de Expo Gutenberg plugin.
               </p>
               <IconText smLabel start={<FontAwesomeIcon icon={faGithub} />}>
-                <a href="https://github.com/sjoerdprive/expo">
-                  https://github.com/sjoerdprive/expo
-                </a>
-              </IconText>
-            </div>
-            <div>
-              <h3 className="fixed">Karwijtje</h3>
-
-              <p className="lead">
-                Lopend project. Community-gericht platform voor het uitwisselen
-                van diensten. Op basis van NextJS, Supabase en Bootstrap.
-              </p>
-              <IconText smLabel start={<FontAwesomeIcon icon={faGithub} />}>
-                <a href="https://github.com/sjoerdprive/karwijtje">
-                  https://github.com/sjoerdprive/karwijtje
+                <a href="https://github.com/sjoerdprive/exposure">
+                  https://github.com/sjoerdprive/exposure
                 </a>
               </IconText>
             </div>
@@ -205,6 +191,23 @@ export default function Home() {
                 <li>Gutenberg</li>
               </ul>
             </Job>
+
+            <Job
+              title="Front end developer"
+              employer="Kolibri, Arnhem"
+              period="April 2023 - Heden"
+            >
+              <p className="lead">
+                Kolibri bouwt met Typescript React aan het gelijknamige CMR voor
+                makelaars. In een team van 4 front-enders werken we aan het
+                verbeteren en uitbreiden van dit product.
+              </p>
+              <ul className="bullets lead">
+                <li>Grootschalige applicatie</li>
+                <li>Typescript React</li>
+                <li>Testen</li>
+              </ul>
+            </Job>
           </div>
         </div>
       </section>
@@ -214,45 +217,37 @@ export default function Home() {
           <div className="columns">
             <SkillMeter
               className="mb-3"
-              label={<h3 className="mb-1 fixed">Javascript (React NextJS)</h3>}
-              score={75}
+              label={"Typescript React"}
+              score={80}
               icon={<FontAwesomeIcon icon={faReact} />}
-              tags={['/app', 'Context API', 'Hooks', 'Typescript', 'Prisma']}
+              tags={["Context API", "Hooks", "Typescript", "Generics", "Redux"]}
             />
             <SkillMeter
               className="mb-3"
-              label={<h3 className="mb-1 fixed">WordPress</h3>}
-              score={60}
+              label={"WordPress"}
+              score={70}
               icon={<FontAwesomeIcon icon={faWordpress} />}
-              tags={['Sage', 'Gutenberg', 'Blade']}
+              tags={["Sage", "Gutenberg", "Blade"]}
             />
             <SkillMeter
               className="mb-3"
-              label={<h3 className="mb-1 fixed">(S)CSS</h3>}
-              score={75}
+              label={"(S)CSS"}
+              score={85}
               icon={<FontAwesomeIcon icon={faSass} />}
-              tags={[
-                'Mixins',
-                ':has()',
-                'CSS Layers',
-                'Bootstrap',
-                'Fluid responsiveness',
-                'Grid',
-                'Flexbox',
-              ]}
+              tags={["Mixins", ":has()", "CSS Layers", "Fluid responsiveness"]}
             />
             <SkillMeter
               className="mb-3"
-              label={<h3 className="mb-1 fixed">Git</h3>}
-              score={65}
+              label={"Git"}
+              score={70}
               icon={<FontAwesomeIcon icon={faGithub} />}
             />
             <SkillMeter
               className="mb-3"
-              label={<h3 className="mb-1 fixed">A11y</h3>}
+              label={"A11y"}
               score={70}
               icon={<FontAwesomeIcon icon={faUniversalAccess} />}
-              tags={['WCAG 2.1 AA']}
+              tags={["WCAG 2.1 AA"]}
             />
           </div>
         </div>

@@ -1,9 +1,9 @@
-'use client';
-import IconText from './iconText';
-import { useEffect, useRef, useState } from 'react';
-import useIntersectionObserver from '@/hooks/useIntersectionObserver';
-import classNames from 'classnames';
-import ProgressBar from './progressBar';
+"use client";
+import IconText from "./iconText";
+import { useEffect, useRef, useState } from "react";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
+import classNames from "classnames";
+import ProgressBar from "./progressBar";
 
 interface ISkillMeterProps {
   icon?: React.ReactNode;
@@ -21,10 +21,10 @@ export default function SkillMeter({
   tags,
 }: ISkillMeterProps) {
   return (
-    <div className={classNames('skill-meter', className)}>
+    <div className={classNames("skill-meter", className)}>
       {icon && <span className="icon">{icon}</span>}
       <div className="body">
-        {label}
+        <h3 className="mb-1 fixed">{label}</h3>
         <ProgressBar hideValue value={score} />
         <div className="tag-cloud">
           {tags?.map((tag, i) => (
